@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 
 // Search the specific topic otherwise shows all
-function SearchBar({ setResults }) {
+function SearchBar({ setResults, setSpinner }) {
   const [value, setValue] = useState();
 
   async function searchEndpoint(value) {
@@ -14,6 +14,7 @@ function SearchBar({ setResults }) {
 
   // Handle the changes and set value here
   const handleChange = (value) => {
+    setSpinner(true);
     setValue(value);
     searchEndpoint(value);
   };
@@ -21,11 +22,11 @@ function SearchBar({ setResults }) {
   //Used effect to show all items at first
   useEffect(() => {
     searchEndpoint(value);
-  }, []);
+  }, [value]);
 
   return (
     <>
-      <from>
+      <form>
         <input
           type="text"
           placeholder="Type to search..."
@@ -34,7 +35,7 @@ function SearchBar({ setResults }) {
             handleChange(e.target.value);
           }}
         />
-      </from>
+      </form>
     </>
   );
 }
