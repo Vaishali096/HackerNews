@@ -1,4 +1,4 @@
-.h1 {
+/* .h1 {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -20,6 +20,12 @@
   font-size: 1.5em;
   letter-spacing: normal;
   color: black;
+} */
+
+.container-app {
+  border: 3px solid;
+  margin-top: 1em;
+  background-color: rgb(53, 51, 51);
 }
 
 .pagination {
@@ -52,10 +58,4 @@
 .pagination a:hover {
   background-color: #ccc;
   color: #fff;
-}
-
-.container-app {
-  border: 3px solid;
-  margin-top: 1em;
-  background-color: rgb(53, 51, 51);
 }

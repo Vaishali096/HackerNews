@@ -3,10 +3,6 @@ import Spinner from "./Spinner";
 import "./SearchResult.css";
 // Showing the result with specific key and value
 const SearchResult = ({ results, setSpinner }) => {
-  // if (results[0].author === "robertwt7") {
-  //   console.log(results[0].url);
-  // }
-
   return (
     <div>
       {results.map((res) => (
