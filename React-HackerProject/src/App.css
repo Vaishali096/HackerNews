@@ -23,7 +23,7 @@
     color:black;
 }
 
-.ReactPaginate{
+ .pagination{
     position:fixed;
     bottom:0;
     left:0;
@@ -37,7 +37,8 @@
     margin: 0;
     list-style: none;
 }
-.ReactPaginate a {
+
+ .pagination a {
     display:flex;
     justify-content: center;
     align-items: center;
@@ -49,7 +50,7 @@
     text-decoration: none;
     padding:10px 12px;
 }
-.ReactPaginate a:hover{
+.pagination a:hover{
     background-color: #ccc;
     color:#fff;
 }

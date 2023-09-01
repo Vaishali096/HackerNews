@@ -46,6 +46,7 @@ return(
  ))
  )}
  </div>
+ {/* <div className="Pagecontainer"> */}
  <ReactPaginate 
  nextLabel=">>"
  previousLabel="<<"
@@ -54,8 +55,12 @@ return(
  pageCount={totalPages}
  renderOnZeroPageCount = {null}
  onPageChange = {handlePageChange}
- ClassName="pagination"
+ className="pagination"
+ activeClassName="active-page"
+ previousClassName="previous-page"
+ nextClassName="next-page"
  />
+ {/* </div> */}
 </div>
  );
 };
