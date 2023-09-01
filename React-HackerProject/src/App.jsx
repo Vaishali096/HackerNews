@@ -17,7 +17,6 @@ function App() {
 
   return (
     <>
-      <div></div>
       <SearchBar setResults={setResults} setSpinner={setSpinner} />
       <Spinner spinner={spinner} setSpinner={setSpinner} />
       <SearchResult results={results} setSpinner={setSpinner} />
