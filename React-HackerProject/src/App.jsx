@@ -1,12 +1,11 @@
 import './App.css'
-import Spinner from './components/Spinner';
+import NewsPage from "./components/NewsPage";
 
 function App() {
   return(
 <>
-<Spinner />
+<NewsPage />
     </>
   );
 }
-
 export default App;
