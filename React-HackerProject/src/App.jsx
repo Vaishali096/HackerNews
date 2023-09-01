@@ -6,6 +6,7 @@ import Spinner from "./components/Spinner";
 
 import SearchBar from "./components/Searchbar";
 import SearchResult from "./components/SearchResult";
+import NewsPage from "./components/NewsPage";
 
 function App() {
   const [results, setResults] = useState([]);
@@ -20,8 +21,8 @@ function App() {
       <SearchBar setResults={setResults} setSpinner={setSpinner} />
       <Spinner spinner={spinner} setSpinner={setSpinner} />
       <SearchResult results={results} setSpinner={setSpinner} />
+      <NewsPage />
     </>
   );
 }
-
 export default App;
