@@ -4,7 +4,6 @@ import { ThreeDots } from "react-loader-spinner";
 
 function Spinner({ spinner, setSpinner }) {
   useEffect(() => {
-    console.log("use effect", spinner);
     const timer = setTimeout(() => {
       setSpinner(false);
     }, 2000);

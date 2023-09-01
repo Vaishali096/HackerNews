@@ -1,0 +1,41 @@
+.container-info {
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+h3 {
+  font-size: medium;
+  margin-bottom: 2px;
+}
+
+.container-title-points {
+  margin: 0;
+  padding: 0;
+  border: 3xp solid;
+  display: flex;
+  flex-direction: column;
+  /* border: 3px solid; */
+}
+
+.points-autor-p {
+  display: flex;
+  flex-direction: column;
+  margin: 3px;
+  justify-content: space-between;
+  color: gray;
+  /* border: 3px solid; */
+}
+
+.input-container-searchbar {
+  border-radius: 25px;
+  margin-left: 30%;
+  min-height: 2em;
+  min-width: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.link-url {
+  color: rgb(77, 114, 116);
+}
